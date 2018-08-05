@@ -1,8 +1,12 @@
 # 重複性在程式碼中是不好的
 
 import random
+sta = input('請決定隨機數字開始值：')
+end = input('請決定隨機數字結束值：')
+sta = int(sta)
+end = int(end)
 
-r = random.randint(1, 100)
+r = random.randint(sta, end)
 count = 0
 while True:
 	count += 1 # count = count + 1
